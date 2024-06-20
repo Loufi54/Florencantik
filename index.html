@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juan love Floren</title>
+<style>
+  body {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .love-container {
+    text-align: center;
+  }
+  .love {
+    font-size: 48px;
+    color: #ff1493;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .heart {
+    position: relative;
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    animation: heartbeat 1s infinite;
+  }
+  .heart:before,
+  .heart:after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 0;
+    width: 12px;
+    height: 20px;
+    background-color: #ff1493;
+    border-radius: 12px 12px 0 0;
+  }
+  .heart:before {
+    transform: rotate(-45deg);
+  }
+  .heart:after {
+    transform: rotate(45deg);
+  }
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="love-container">
+    <div class="love">love you <span class="heart"></span> ayang floren</div>
+    <p style="font-size: 24px; color: #333;">calon istri ku<3</p>
+  </div>
+</body>
+</html
